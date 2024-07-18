@@ -120,7 +120,7 @@ body{
   line-height: var(--line-height);
   overflow: hidden;
   position: relative;
-  color: var(--primary-text-color);
+  color: white;
   margin: 0 10px;
 }
 
@@ -198,4 +198,20 @@ body{
 
 }
 
-/* <..............Message Error..............................> */
+/* <..............................LongArticle.......................> */
+.long-article{
+  color: white;
+  margin: 0 40px;
+}
+.Article-Heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin: 0 40px */
+}
+.category{
+  color: #99c9f3;
+}
+.poppin-Heading{
+  text-decoration: underline;
+}
