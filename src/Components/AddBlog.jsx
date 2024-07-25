@@ -85,10 +85,13 @@
 
 // export default AddBlog;
 
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import axios from "axios";
+import { AppContext } from "../AppContext";
+
 
 const AddBlog = () => {
+  const {refreshPage} = useContext(AppContext)
   const [blog, setBlog] = useState({
     blogTitle: "",
     category: "",
@@ -104,9 +107,12 @@ const AddBlog = () => {
     event.preventDefault();
     try {
       const response = await axios.post("http://localhost:8080/api/blogs", blog);
-      console.log(response.data); 
+      console.log(response.data);
+      refreshPage()
+      alert('Added the Blog Successfully') 
     } catch (error) {
       console.error(error); 
+      alert('Failed to add the Blog')
     }
   };
 
