@@ -16,6 +16,9 @@
 body{
   background-color: #282c2d;
 }
+.navbar{
+  padding: 0px 5% !important;
+}
 
 /* <........................Article Card................................> */
 
@@ -214,4 +217,43 @@ body{
 }
 .poppin-Heading{
   text-decoration: underline;
+}
+/* <........................ Add Blog ..................................> */
+.addblog{
+  /* margin: 0px 100px; */
+  display: flex;
+ color: white;
+ justify-content: center;
+}
+.addblogform{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  padding: 10px ;
+}
+.addbloggap{
+  margin-bottom: 20px;
+  display: flex;
+  width: 500px;
+  border-radius: 3px;
+  border: none;
+}
+.postbtn{
+  background-color: #32597a;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  margin-top: 10px;
+  margin-left: 40%;
+  transition: background-color 0.3s ease;
+  &:hover{
+    background-color: #23527c;
+  }
+  &:disabled{
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
 }

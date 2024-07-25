@@ -5,6 +5,7 @@ import Home from "./Components/Home";
 import Navbar from "./Components/Navbar/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LongArticle from "./Components/LongArticle";
+import AddBlog from "./Components/AddBlog";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/article/:id" element={<LongArticle />} />
+          <Route path="/addBlog" element={<AddBlog/>}/>
         </Routes>
       </Router>
     </AppProvider>

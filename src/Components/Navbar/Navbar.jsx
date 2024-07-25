@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from "react";
 import "./Navbar.css";
 import searchButton from "../../assets/searching.png"
+import AddBlog from "../AddBlog";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,7 +22,7 @@ const handleSearchSubmit = (e) => {
 };
   return (
     <div>
-      <nav>
+      <nav className="navbar">
         <div className="logo">
           {/* <img src={logo} alt="logo" /> */}
           <h1>TELUSKO</h1>
@@ -31,7 +32,7 @@ const handleSearchSubmit = (e) => {
             <a href="#">Home</a>
           </li>
           <li>
-            <a href="#">Add Article</a>
+            <a href="/addBlog">Add Article</a>
           </li>
           <li>
             <a href="#">Blog</a>
