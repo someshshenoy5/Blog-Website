@@ -28,13 +28,6 @@ const AppProvider = ({ children }) => {
     }
   };
 
-  
-
-  const refreshPage = () =>{
-    window.location.reload();
-  }
-
-  
   return (
     <AppContext.Provider value={{  blogs, isError, getBlogById, selectedBlog, refreshPage }}>
       {children}
