@@ -29,7 +29,7 @@ const handleSearchSubmit = (e) => {
         </div>
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
             <a href="/addBlog">Add Article</a>
@@ -62,10 +62,10 @@ const handleSearchSubmit = (e) => {
         
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
-            <a href="#">Add Article</a>
+            <a href="/addBlog">Add Article</a>
           </li>
           <li>
             <a href="#">Blog</a>

@@ -10,7 +10,7 @@ const Home = () => {
     return (
       <div className="disconnected">
         <img src={disconnected} alt="Something went Wrong" />
-        <h4>{isError}</h4>
+        <h4 className="disconnected-message">Start the server</h4>
       </div>
     );
   }

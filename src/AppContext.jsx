@@ -1,4 +1,3 @@
-// AppProvider.js
 import { createContext, useState, useEffect } from "react";
 import { fetchBlogs, fetchBlogById } from "./api";
 
@@ -29,8 +28,15 @@ const AppProvider = ({ children }) => {
     }
   };
 
+  
+
+  const refreshPage = () =>{
+    window.location.reload();
+  }
+
+  
   return (
-    <AppContext.Provider value={{  blogs, isError, getBlogById, selectedBlog }}>
+    <AppContext.Provider value={{  blogs, isError, getBlogById, selectedBlog, refreshPage }}>
       {children}
     </AppContext.Provider>
   );

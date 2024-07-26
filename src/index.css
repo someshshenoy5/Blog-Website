@@ -218,6 +218,26 @@ body{
 .poppin-Heading{
   text-decoration: underline;
 }
+.disconnected img{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+  margin: 200px 0 100px 0;
+
+}
+.disconnected{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.disconnected-message{
+  color: white;
+  width: fit-content;
+}
 /* <........................ Add Blog ..................................> */
 .addblog{
   /* margin: 0px 100px; */
@@ -232,7 +252,7 @@ body{
   padding: 10px ;
 }
 .addbloggap{
-  margin-bottom: 20px;
+  margin: 5px 0 20px;
   display: flex;
   width: 500px;
   border-radius: 3px;
@@ -256,4 +276,50 @@ body{
     background-color: #ccc;
     cursor: not-allowed;
   }
+}
+/* <...................update delete button ......................> */
+.updatebutton{
+  background-color: #32597a;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  margin-top: 10px;
+  /* margin-left: 40%; */
+  transition: background-color 0.3s ease;
+  &:hover{
+    background-color: #23527c;
+  }
+  &:disabled{
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+}
+.deletebutton{
+  background-color: #9b3b3b;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  margin-top: 10px;
+  margin-left: 20px;
+  transition: background-color 0.3s ease;
+  &:hover{
+    background-color: #732929;
+  }
+  &:disabled{
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+}
+.updatedeletesection{
+  display: flex;
+  padding: 10px 0 30px ;
+  justify-content: center;
+  
 }

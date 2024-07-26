@@ -8,7 +8,8 @@ export const fetchBlogs = async () => {
     return response.data;
   } catch (error) {
     console.error(error);
-    return [];
+    throw new Error('backend not running');
+
   }
 };
 export const fetchBlogById = async (id) => {
